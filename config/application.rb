@@ -16,13 +16,16 @@ require "action_cable/engine"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
+
 Bundler.require(*Rails.groups)
+#Rails.autoloaders.main.ignore(Rails.root.join('app/path/to/dir'))
 
 module Asku
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.   
     config.load_defaults 7.0
-    #config.autoloader = :classic
+    config.autoloader = :classic
+    #Rails.autoloaders.main.ignore(Rails.root.join('app/controllers'))
 
     # Configuration for the application, engines, and railties goes here.
     #

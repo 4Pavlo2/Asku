@@ -3,7 +3,11 @@ import Rails from "@rails/ujs"
 import * as bootstrap from "bootstrap"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
-import "channels"
+// import "channels"
+
+import 'bootstrap/js/dist/dropdown'
+import 'bootstrap/js/dist/collapse'
+// import './scripts/select'
 
 Rails.start()
 Turbolinks.start()

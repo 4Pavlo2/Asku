@@ -1,7 +1,5 @@
 @import 'bootstrap/scss/bootstrap';
 
-@import 'bootstrap';
-
 .field_with_errors {
   .form-control {
     border-color: $red;
@@ -10,4 +8,8 @@
   label {
     color: $red;
   }
+}
+
+div{
+  color: red;
 }
