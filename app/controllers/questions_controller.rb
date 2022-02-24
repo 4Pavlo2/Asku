@@ -1,5 +1,6 @@
 class QuestionsController < ApplicationController
-  before_action :set_question!, only: %i[show destroy edit update]
+  before_action :set_question!
+  before_action :set_answer!, except: :create
 
   def show
     @answer = @question.answers.build
@@ -18,7 +19,7 @@ class QuestionsController < ApplicationController
   def update
     if @question.update question_params
       flash[:success] = "Question updated!"
-      redirect_to questions_path
+      redirect_to questions_path(@question)
     else
       render :edit
     end
@@ -50,5 +51,9 @@ class QuestionsController < ApplicationController
 
   def set_question!
     @question = Question.find params[:id]
+  end
+
+  def set_answer!
+    @answer = @question.answers.find params[:id]
   end
 end

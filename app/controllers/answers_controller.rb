@@ -2,6 +2,10 @@ class AnswersController < ApplicationController
   before_action :set_question!
   before_action :set_answer!, except: :create
 
+  def edit
+    @answer = @question.answers.find params[:id]
+  end
+
   def update
     if @answer.update answer_params
       flash[:success] = "Answer updated!"
@@ -9,9 +13,6 @@ class AnswersController < ApplicationController
     else
       render :edit
     end
-  end
-
-  def edit
   end
 
   def create
