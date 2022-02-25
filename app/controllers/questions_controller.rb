@@ -1,6 +1,7 @@
 class QuestionsController < ApplicationController
-  before_action :set_question!
-  before_action :set_answer!, except: :create
+  #before_action :set_question!#, except: :index
+  before_action :set_question!, only: %i[show destroy edit update]
+  #before_action :set_answer!, except: :create #index]
 
   def show
     @answer = @question.answers.build
@@ -26,6 +27,7 @@ class QuestionsController < ApplicationController
   end
 
   def index
+    #binding.pry
     @questions = Question.all
   end
 
@@ -50,6 +52,7 @@ class QuestionsController < ApplicationController
   end
 
   def set_question!
+    #binding.pry
     @question = Question.find params[:id]
   end
 
