@@ -1,7 +1,5 @@
 class QuestionsController < ApplicationController
-  #before_action :set_question!#, except: :index
   before_action :set_question!, only: %i[show destroy edit update]
-  #before_action :set_answer!, except: :create #index]
 
   def show
     @answer = @question.answers.build
