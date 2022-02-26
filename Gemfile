@@ -30,6 +30,8 @@ gem "cssbundling-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+gem "faker", "~> 2"
+
 
 gem 'rails-i18n', '~> 7'
 gem 'sidekiq', '~> 6'
