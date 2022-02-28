@@ -31,7 +31,7 @@ gem "cssbundling-rails"
 gem "jbuilder"
 
 
-gem 'pagy', '~> 4.10'
+gem 'pagy', '~> 5'
 
 
 gem 'rails-i18n', '~> 7'
