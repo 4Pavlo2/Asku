@@ -18,7 +18,7 @@ module ApplicationHelper
     render partial: 'shared/menu', locals: {current_page: current_page}
   end
 
-  def full_title(page_title = "")
+  def full_title(page_title = '')
     base_title = "AskIT"
     if page_title.present?
       "#{page_title} | #{base_title}"
@@ -27,3 +27,5 @@ module ApplicationHelper
     end
   end
 end
+
+
