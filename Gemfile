@@ -35,6 +35,8 @@ gem 'pagy', '~> 5'
 
 gem 'draper', '~> 4'
 
+gem 'valid_email2', '~> 4'
+
 
 gem 'rails-i18n', '~> 7'
 gem 'sidekiq', '~> 6'
