@@ -40,6 +40,7 @@ gem 'valid_email2', '~> 4'
 gem 'rubyzip', '~> 2'
 gem 'caxlsx'
 gem 'caxlsx_rails'
+gem 'rubyXL'
 
 gem 'rails-i18n', '~> 7'
 gem 'sidekiq', '~> 6'

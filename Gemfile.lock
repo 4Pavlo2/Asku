@@ -226,6 +226,9 @@ GEM
       rubocop (>= 1.7.0, < 2.0)
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
+    rubyXL (3.4.22)
+      nokogiri (>= 1.10.8)
+      rubyzip (>= 1.3.0)
     rubyzip (2.3.2)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -302,6 +305,7 @@ DEPENDENCIES
   rubocop (~> 1.18)
   rubocop-performance (~> 1)
   rubocop-rails (~> 2)
+  rubyXL
   rubyzip (~> 2)
   sass-rails (>= 6)
   sidekiq (~> 6)
