@@ -32,7 +32,7 @@ gem 'cssbundling-rails'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
-gem 'webpacker', '~> 5'
+gem 'webpacker', '~> 6.0.0.rc.5'
 
 gem 'draper', '~> 4'
 gem 'pagy', '~> 5'
@@ -41,6 +41,7 @@ gem 'rubyzip', '~> 2'
 gem 'caxlsx'
 gem 'caxlsx_rails'
 gem 'rubyXL'
+gem 'activerecord-import'
 
 gem 'rails-i18n', '~> 7'
 gem 'sidekiq', '~> 6'
