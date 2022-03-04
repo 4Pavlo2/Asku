@@ -37,6 +37,7 @@ gem 'webpacker', '~> 5'
 gem 'draper', '~> 4'
 gem 'pagy', '~> 5'
 gem 'valid_email2', '~> 4'
+gem 'rubyzip', '~> 2'
 
 gem 'rails-i18n', '~> 7'
 gem 'sidekiq', '~> 6'
