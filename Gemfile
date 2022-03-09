@@ -42,6 +42,7 @@ gem 'caxlsx'
 gem 'caxlsx_rails'
 gem 'rubyXL'
 gem 'activerecord-import'
+gem 'popper_js', '~> 2.9.3'
 
 gem 'rails-i18n', '~> 7'
 gem 'sidekiq', '~> 6'
