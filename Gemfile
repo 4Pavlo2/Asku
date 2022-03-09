@@ -18,9 +18,7 @@ gem 'sqlite3', '~> 1.4'
 gem 'puma', '~> 5.0'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '>= 6'
 
-gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
@@ -30,7 +28,7 @@ gem 'jsbundling-rails'
 gem 'cssbundling-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
-gem 'jbuilder'
+#gem 'jbuilder'
 
 gem 'webpacker', '~> 6.0.0.rc.5'
 

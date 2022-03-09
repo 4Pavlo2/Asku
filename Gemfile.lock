@@ -107,7 +107,6 @@ GEM
     erubi (1.10.0)
     faker (2.20.0)
       i18n (>= 1.8.11, < 2)
-    ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
     htmlentities (4.3.4)
@@ -117,9 +116,6 @@ GEM
     io-wait (0.2.1)
     irb (1.4.1)
       reline (>= 0.3.0)
-    jbuilder (2.11.5)
-      actionview (>= 5.0.0)
-      activesupport (>= 5.0.0)
     jsbundling-rails (1.0.2)
       railties (>= 6.0.0)
     loofah (2.14.0)
@@ -233,16 +229,6 @@ GEM
       nokogiri (>= 1.10.8)
       rubyzip (>= 1.3.0)
     rubyzip (2.3.2)
-    sass-rails (6.0.0)
-      sassc-rails (~> 2.1, >= 2.1.1)
-    sassc (2.4.0)
-      ffi (~> 1.9)
-    sassc-rails (2.1.2)
-      railties (>= 4.0.0)
-      sassc (>= 2.0)
-      sprockets (> 3.0)
-      sprockets-rails
-      tilt
     semantic_range (3.0.0)
     sidekiq (6.4.1)
       connection_pool (>= 2.2.2)
@@ -258,11 +244,7 @@ GEM
     sqlite3 (1.4.2)
     strscan (3.0.1)
     thor (1.2.1)
-    tilt (2.0.10)
     timeout (0.2.0)
-    turbolinks (5.2.1)
-      turbolinks-source (~> 5.2)
-    turbolinks-source (5.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.1.0)
@@ -298,7 +280,6 @@ DEPENDENCIES
   debug
   draper (~> 4)
   faker (~> 2)
-  jbuilder
   jsbundling-rails
   pagy (~> 5)
   popper_js (~> 2.9.3)
@@ -312,11 +293,9 @@ DEPENDENCIES
   rubocop-rails (~> 2)
   rubyXL
   rubyzip (~> 2)
-  sass-rails (>= 6)
   sidekiq (~> 6)
   sprockets-rails
   sqlite3 (~> 1.4)
-  turbolinks (~> 5)
   tzinfo-data
   valid_email2 (~> 4)
   web-console
