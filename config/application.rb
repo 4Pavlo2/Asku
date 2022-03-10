@@ -30,7 +30,7 @@ module Asku
     # Rails.autoloaders.main.ignore(Rails.root.join('app/controllers'))
 
     config.i18n.available_locales = %i[en uk]
-    config.i18n.default_locale = :en
+    config.i18n.default_locale = :uk
 
     # Configuration for the application, engines, and railties goes here.
     #
