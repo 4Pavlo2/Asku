@@ -45,6 +45,7 @@ gem 'popper_js', '~> 2.9.3'
 gem 'rails-i18n', '~> 7'
 gem 'sidekiq', '~> 6'
 
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
