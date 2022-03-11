@@ -4,11 +4,14 @@ class User < ApplicationRecord
   attr_accessor :old_password, :remember_token
 
   has_secure_password validations: false
+  
+  has_many :questions, dependent: :destroy
+  has_many :answers, dependent: :destroy
 
   validate :password_presence
   validate :correct_old_password, on: :update, if: -> { password.present? }
   validates :password, confirmation: true, allow_blank: true,
-                       length: { minimum: 8, maximum: 70 }
+                      length: { minimum: 8, maximum: 70 }
 
   validates :email, presence: true, uniqueness: true, 'valid_email_2/email': true
   validate :password_complexity
