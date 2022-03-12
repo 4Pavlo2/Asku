@@ -20,8 +20,8 @@ class QuestionsController < ApplicationController
 
   def update
     if @question.update question_params
-      flash[:success] = 'Question updated!'
-      redirect_to questions_path(@question)
+      flash[:success] = t('.success')
+      redirect_to questions_path
     else
       render :edit
     end
@@ -37,9 +37,9 @@ class QuestionsController < ApplicationController
   end
 
   def create
-    @question = Question.new question_params
+    @question = current_user.questions.build question_params
     if @question.save
-      flash[:success] = 'Question created!'
+      flash[:success] = t('.success')
       redirect_to questions_path
     else
       render :new
@@ -53,11 +53,6 @@ class QuestionsController < ApplicationController
   end
 
   def set_question!
-    # binding.pry
     @question = Question.find params[:id]
-  end
-
-  def set_answer!
-    @answer = @question.answers.find params[:id]
   end
 end
