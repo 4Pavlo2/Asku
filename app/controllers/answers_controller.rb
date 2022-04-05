@@ -15,7 +15,8 @@ class AnswersController < ApplicationController
     end
   end
 
-  def edit; end
+  def edit
+  end
 
   def create
     @answer = @question.answers.build answer_create_params

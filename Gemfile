@@ -15,7 +15,7 @@ gem 'sprockets-rails'
 gem 'sqlite3', '~> 1.4'
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem 'puma', '~> 5.0'
+gem 'puma' , '~> 5.6.4'
 
 # Use SCSS for stylesheets
 
@@ -30,7 +30,7 @@ gem 'cssbundling-rails'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 #gem 'jbuilder'
 
-gem 'webpacker', '~> 6.0.0.rc.5'
+gem 'webpacker', '~> 6.0.0.rc.6'
 
 gem 'draper', '~> 4'
 gem 'pagy', '~> 5'
@@ -39,7 +39,7 @@ gem 'rubyzip', '~> 2'
 gem 'caxlsx'
 gem 'caxlsx_rails'
 gem 'rubyXL'
-gem 'activerecord-import'
+gem 'activerecord-import', '~> 1.4'
 gem 'popper_js', '~> 2.9.3'
 
 gem 'rails-i18n', '~> 7'
@@ -53,7 +53,7 @@ gem 'sidekiq', '~> 6'
 # gem "kredis"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
-gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.17'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
@@ -70,7 +70,7 @@ gem 'bootsnap', require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'debug', '~> 1.5.0', platforms: %i[mri mingw x64_mingw]
   gem 'faker', '~> 2'
   gem 'pry-rails'
 end
@@ -84,8 +84,8 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-  gem 'rack-mini-profiler', '~> 2'
-  gem 'rubocop', '~> 1.18', require: false
+  gem 'rack-mini-profiler', '~> 3'
+  gem 'rubocop', '~> 1.26.1', require: false
   gem 'rubocop-performance', '~> 1', require: false
-  gem 'rubocop-rails', '~> 2', require: false
+  gem 'rubocop-rails', '~> 2.14.2', require: false
 end
