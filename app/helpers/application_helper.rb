@@ -3,12 +3,15 @@
 module ApplicationHelper
   include Pagy::Frontend
 
-  def pagination(_obj)
-    raw(pagy_bootstrap_nav(@pagy)) if @pagy.pages > 1
+  def pagination(obj)
+    # rubocop:disable Rails/OutputSafety
+    raw(pagy_bootstrap_nav(obj)) if obj.pages > 1
+    # rubocop:enable Rails/OutputSafety
   end
 
   def nav_tab(title, url, options = {})
     current_page = options.delete :current_page
+
     css_class = current_page == title ? 'text-secondary' : 'text-white'
 
     options[:class] = if options[:class]
@@ -25,7 +28,7 @@ module ApplicationHelper
   end
 
   def full_title(page_title = '')
-    base_title = 'AskIT'
+    base_title = 'AskIt'
     if page_title.present?
       "#{page_title} | #{base_title}"
     else
