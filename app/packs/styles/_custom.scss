@@ -1,12 +1,13 @@
+
+  
 .field_with_errors {
   .form-control {
     border-color: $red;
   }
-
   label {
     color: $red;
   }
-}
+} 
 
 .flag {
   width: 16px;
@@ -22,7 +23,6 @@
   background-position: -1px -0px;
 
 }
-
 .en-flag {
   background-position: -1px -17px;
 }
