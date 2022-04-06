@@ -28,7 +28,6 @@ module Internationalization
       return if header.nil?
 
       locales = parse_header header
-    
 
       return if locales.empty?
 
